@@ -1,0 +1,48 @@
+<h1> Cadastar Ponto Distribuicao </h1>
+
+<form role="form" action="#" >
+	<div class="form-group">		 
+		<label for="origem">
+			Origem
+		</label>
+		<input type="text" class="form-control" id="origem" />
+	</div>
+	<div class="form-group">		 
+		<label for="origem">
+			Destino
+		</label>
+		<input type="text" class="form-control" id="destino" />
+	</div>
+	<div class="form-group">		 
+		<label for="distancia">
+			Distancia
+		</label>
+		<input type="text" class="form-control" id="distancia" />
+	</div>
+	<button id="salvar" class="btn btn-primary">
+		Salvar
+	</button>
+</form>
+
+
+<script type="text/javascript">
+$("#salvar").click(function(){
+  var origem = document.getElementById("origem").value;
+  var destino = document.getElementById("destino").value;
+  var distancia = document.getElementById("distancia").value;
+  $.ajax({
+   url : "http://localhost:3005/api/v1/distancias.json",
+   type : 'post',
+   data : {
+            origem,
+            destino,
+            distancia
+           },
+    success:function (data) {
+    		$(location).attr('href', 'http://localhost:3001/ponto_distribuicao/index');
+        }         
+	}); 
+ 
+});
+</script>
+

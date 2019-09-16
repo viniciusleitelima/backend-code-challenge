@@ -1,0 +1,18 @@
+<%= form_for PontoDeDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+  <div class="field">
+    <%= f.label :origem %>
+    <%= f.text_field :origem %>
+  </div>
+  <div class="field">
+    <%= f.label :destino %>
+    <%= f.text_field :destino %>
+  </div>
+  <div class="field">
+    <%= f.label :distancia %>
+    <%= f.text_field :distancia %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

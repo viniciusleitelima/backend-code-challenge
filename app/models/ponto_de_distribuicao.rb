@@ -1,0 +1,2 @@
+class PontoDeDistribuicao < ApplicationRecord
+end

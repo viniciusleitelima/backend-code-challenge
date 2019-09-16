@@ -1,0 +1,17 @@
+<h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% @resposta.each do |ponto| %>
+		<tr>
+			<td><%= ponto["origem"] %></td>
+			<td><%= ponto["destino"] %></td>
+			<td><%= ponto["distancia"] %></td>
+		</tr>
+	<% end %>	
+</table>
+<%= link_to('Cadastrar Novo',"new") %>

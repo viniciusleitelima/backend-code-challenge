@@ -1,0 +1,2855 @@
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 14:12:09 -0300
+  [1m[35m (41.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 40.8ms | Allocations: 354)
+[Webpacker] Compilingâ€¦
+[Webpacker] Compiled all packs in C:/Users/Positivo/Documents/pontoDistribuicao/public/packs
+Completed 200 OK in 123467ms (Views: 123350.9ms | ActiveRecord: 0.0ms | Allocations: 1429623)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 14:51:46 -0300
+  [1m[35m (44.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  	resp = RestClient.get() "#{url}"
+  	                        ^):
+  
+app/controllers/ponto_distribuicao_controller.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 14:52:43 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 7364ms (ActiveRecord: 0.0ms | Allocations: 3717)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/ponto_distribuicao_controller.rb:8:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 14:53:14 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1341)
+Completed 500 Internal Server Error in 632ms (ActiveRecord: 0.0ms | Allocations: 3782)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @respostass.each do |resposta| %>
+    10: 		<tr>
+    11: 			<td><%= resposta.origem %></td>
+    12: 			<td><%= resposta.destino %></td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 14:53:35 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1767)
+Completed 500 Internal Server Error in 571ms (ActiveRecord: 0.0ms | Allocations: 4156)
+
+
+  
+ActionView::Template::Error (undefined method `origem' for #<Hash:0x000000000babc6c8>):
+     8: 	</tr>
+     9: 	<% @respostas.each do |resposta| %>
+    10: 		<tr>
+    11: 			<td><%= resposta.origem %></td>
+    12: 			<td><%= resposta.destino %></td>
+    13: 			<td><%= resposta.distancia %></td
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:02:16 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1770)
+Completed 500 Internal Server Error in 582ms (ActiveRecord: 0.0ms | Allocations: 4160)
+
+
+  
+ActionView::Template::Error (undefined method `origem' for #<Hash:0x00000000094e9c98>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto.origem %></td>
+    12: 			<td><%= ponto.destino %></td>
+    13: 			<td><%= ponto.distancia %></td
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:03:19 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 150)
+Completed 200 OK in 51952ms (Views: 50846.9ms | ActiveRecord: 0.0ms | Allocations: 1420150)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:04:57 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 173)
+Completed 200 OK in 659ms (Views: 159.1ms | ActiveRecord: 0.0ms | Allocations: 9356)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:05:35 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1130)
+Completed 500 Internal Server Error in 639ms (ActiveRecord: 0.0ms | Allocations: 2971)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><% ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:09:30 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 0.0ms | Allocations: 1730)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/ponto_distribuicao_controller.rb:7:in `abort'
+app/controllers/ponto_distribuicao_controller.rb:7:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:10:23 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 919ms (ActiveRecord: 0.0ms | Allocations: 1733)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/ponto_distribuicao_controller.rb:8:in `abort'
+app/controllers/ponto_distribuicao_controller.rb:8:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:11:06 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 0.0ms | Allocations: 1645)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/ponto_distribuicao_controller.rb:8:in `abort'
+app/controllers/ponto_distribuicao_controller.rb:8:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:11:33 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 533ms (ActiveRecord: 0.0ms | Allocations: 1639)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/ponto_distribuicao_controller.rb:7:in `abort'
+app/controllers/ponto_distribuicao_controller.rb:7:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:12:39 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 975)
+Completed 500 Internal Server Error in 582ms (ActiveRecord: 0.0ms | Allocations: 3371)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% if @resposta do  %>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% if @resposta do  %>
+10:    		<tr>
+11:    			<td>1</td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:13:22 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 954)
+Completed 500 Internal Server Error in 527ms (ActiveRecord: 0.0ms | Allocations: 3341)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% if @resposta do puts "1" end %>
+		
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% if @resposta do puts "1" end %>
+10:    		
+11:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:13: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:14:07 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 989)
+Completed 500 Internal Server Error in 707ms (ActiveRecord: 0.0ms | Allocations: 3376)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% if @resposta do |ponto| %>
+		<tr>
+			<td><% ponto %></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% if @resposta do |ponto| %>
+10:    		<tr>
+11:    			<td><% ponto %></td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:14:24 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 975)
+Completed 500 Internal Server Error in 570ms (ActiveRecord: 0.0ms | Allocations: 2619)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% if @resposta do |ponto| %>
+		<tr>
+			<td><% ponto %></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% if @resposta do |ponto| %>
+10:    		<tr>
+11:    			<td><% ponto %></td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:15:03 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 165)
+Completed 200 OK in 777ms (Views: 183.1ms | ActiveRecord: 0.0ms | Allocations: 9351)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:17:10 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1825)
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 0.0ms | Allocations: 4205)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x000000000f113190>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><% ponto.id %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:17:57 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 165)
+Completed 200 OK in 799ms (Views: 152.5ms | ActiveRecord: 0.0ms | Allocations: 9348)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:24:47 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant ActiveResource
+Did you mean?  ActiveRecord):
+  
+app/controllers/ponto_distribuicao_controller.rb:1:in `<top (required)>'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:31:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 2915ms (ActiveRecord: 0.0ms | Allocations: 50043)
+
+
+  
+NoMethodError (undefined method `resposta=' for #<PontoDistribuicaoController:0x000000000d6927f8>
+Did you mean?  response=):
+  
+app/controllers/ponto_distribuicao_controller.rb:4:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:32:23 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:4: syntax error, unexpected tIVAR, expecting '('
+  	self.@resposta = "http://localhost:3000/api...
+  	     ^~~~~~~~~):
+  
+app/controllers/ponto_distribuicao_controller.rb:4: syntax error, unexpected tIVAR, expecting '('
+app/controllers/ponto_distribuicao_controller.rb:4: syntax error, unexpected tIVAR, expecting '('
+app/controllers/ponto_distribuicao_controller.rb:4: syntax error, unexpected tIVAR, expecting '('
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:32:47 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 632ms (ActiveRecord: 0.0ms | Allocations: 50038)
+
+
+  
+NoMethodError (undefined method `resposta=' for #<PontoDistribuicaoController:0x0000000010451c98>
+Did you mean?  response=):
+  
+app/controllers/ponto_distribuicao_controller.rb:4:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:33:41 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:6: syntax error, unexpected tIVAR, expecting '('
+  	self.@resposta ="http://localhost:3000/api/...
+  	     ^~~~~~~~~):
+  
+app/controllers/ponto_distribuicao_controller.rb:6: syntax error, unexpected tIVAR, expecting '('
+app/controllers/ponto_distribuicao_controller.rb:6: syntax error, unexpected tIVAR, expecting '('
+app/controllers/ponto_distribuicao_controller.rb:6: syntax error, unexpected tIVAR, expecting '('
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:33:50 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant ActiveResource
+Did you mean?  ActiveRecord):
+  
+app/controllers/ponto_distribuicao_controller.rb:1:in `<top (required)>'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:34:12 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 647ms (ActiveRecord: 0.0ms | Allocations: 49556)
+
+
+  
+NoMethodError (undefined method `resposta' for #<PontoDistribuicaoController:0x000000000dab6550>
+Did you mean?  response):
+  
+app/controllers/ponto_distribuicao_controller.rb:6:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:34:46 -0300
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant ActiveResource
+Did you mean?  ActiveRecord):
+  
+app/controllers/ponto_distribuicao_controller.rb:1:in `<top (required)>'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:34:58 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 3202ms (ActiveRecord: 0.0ms | Allocations: 51096)
+
+
+  
+NoMethodError (undefined method `resposta=' for #<PontoDistribuicaoController:0x000000000e485bf8>
+Did you mean?  response=):
+  
+app/controllers/ponto_distribuicao_controller.rb:6:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:35:31 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:35:33 -0300
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2023.4ms | Allocations: 146957)
+Completed 500 Internal Server Error in 2910ms (ActiveRecord: 0.0ms | Allocations: 149448)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resposta' for #<#<Class:0x0000000010622fb8>:0x00000000106216b8>
+Did you mean?  @resposta):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><% resposta %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1957.5ms | Allocations: 146798)
+Completed 500 Internal Server Error in 2935ms (ActiveRecord: 0.0ms | Allocations: 148557)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resposta' for #<#<Class:0x00000000101fce20>:0x00000000101f7290>
+Did you mean?  @resposta):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><% resposta %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:35:56 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 1942)
+Completed 500 Internal Server Error in 758ms (ActiveRecord: 0.0ms | Allocations: 4278)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000001055fba8>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><% ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:36:18 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1929)
+Completed 500 Internal Server Error in 883ms (ActiveRecord: 0.0ms | Allocations: 4257)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x0000000006abbd90>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td>1</td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:36:42 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 123)
+Completed 200 OK in 1176ms (Views: 524.5ms | ActiveRecord: 0.0ms | Allocations: 9318)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:37:36 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 758ms (Views: 157.1ms | ActiveRecord: 0.0ms | Allocations: 8366)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:40:42 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1008)
+Completed 500 Internal Server Error in 3433ms (ActiveRecord: 0.0ms | Allocations: 3345)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<% @str = "Hi" %>
+
+<b><%= @str %=></b>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% @resposta %>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <% @str = "Hi" %>
+4:    
+5:    <b><%= @str %=></b>
+6:    
+7:    <table class="table">
+8:    	<tr>
+9:    		<th>Origem</th>
+10:    		<th>Destino</th>
+11:    		<th>Distancia</th>
+12:    	</tr>
+13:    	<% @resposta %>
+14:    		<tr>
+15:    			<td>1</td>
+16:    			<td>1</td>
+17:    			<td>1</td>
+18:    		</tr>	
+19:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:5: syntax error, unexpected '>'
+app/views/ponto_distribuicao/index.html.erb:9: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:10: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:11: unknown regexp options - th
+app/views/ponto_distribuicao/index.html.erb:12: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:15: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:15: unmatched close parenthesis: /tr>
+app/views/ponto_distribuicao/index.html.erb:16: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:17: unknown regexp options - td
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected '<'
+app/views/ponto_distribuicao/index.html.erb:19: unknown regexp options - tabl
+app/views/ponto_distribuicao/index.html.erb:21: unterminated string meets end of file
+app/views/ponto_distribuicao/index.html.erb:21: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:41:44 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 162)
+Completed 200 OK in 1082ms (Views: 236.2ms | ActiveRecord: 0.0ms | Allocations: 9294)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:42:34 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 157)
+Completed 200 OK in 995ms (Views: 161.0ms | ActiveRecord: 0.0ms | Allocations: 9282)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:42:53 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 158)
+Completed 200 OK in 715ms (Views: 195.8ms | ActiveRecord: 0.0ms | Allocations: 9280)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:43:10 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+Completed 200 OK in 557ms (Views: 115.8ms | ActiveRecord: 0.0ms | Allocations: 8458)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:45:32 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 209)
+Completed 200 OK in 651ms (Views: 167.6ms | ActiveRecord: 0.0ms | Allocations: 9392)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:46:22 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1738)
+Completed 500 Internal Server Error in 514ms (ActiveRecord: 0.0ms | Allocations: 4111)
+
+
+  
+ActionView::Template::Error (undefined method `origem' for #<Hash:0x000000000fee2230>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto.origem %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:46:35 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 30.8ms | Allocations: 1578)
+Completed 500 Internal Server Error in 829ms (ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+  
+ActionView::Template::Error (undefined method `origem' for #<Hash:0x000000000fe4f4d0>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto.origem %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:46:44 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 206)
+Completed 200 OK in 758ms (Views: 277.7ms | ActiveRecord: 0.0ms | Allocations: 9384)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:47:15 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 164)
+Completed 200 OK in 645ms (Views: 150.9ms | ActiveRecord: 0.0ms | Allocations: 9335)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:47:35 -0300
+Processing by PontoDistribuicaoController#index as HTML
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:47:36 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 206)
+Completed 200 OK in 1360ms (Views: 259.7ms | ActiveRecord: 0.0ms | Allocations: 11763)
+
+
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 46)
+Completed 200 OK in 962ms (Views: 143.3ms | ActiveRecord: 0.0ms | Allocations: 17526)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:53:59 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 989)
+Completed 500 Internal Server Error in 645ms (ActiveRecord: 0.0ms | Allocations: 3370)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% @resposta.each do |ponto| %>
+		<tr>
+			<td><%= ponto->origem() %></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% @resposta.each do |ponto| %>
+10:    		<tr>
+11:    			<td><%= ponto->origem() %></td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected '(', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:54:16 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 989)
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 0.0ms | Allocations: 3375)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<% @resposta.each do |ponto| %>
+		<tr>
+			<td><%= ponto->origem %></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<% @resposta.each do |ponto| %>
+10:    		<tr>
+11:    			<td><%= ponto->origem %></td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:11: syntax error, unexpected ')', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/ponto_distribuicao/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:55:15 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 1941)
+Completed 500 Internal Server Error in 2439ms (ActiveRecord: 0.0ms | Allocations: 4292)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000000ec2ad40>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:55:37 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1781)
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 0.0ms | Allocations: 3381)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000000ebf9b50>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:55:57 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 973)
+Completed 500 Internal Server Error in 731ms (ActiveRecord: 0.0ms | Allocations: 3315)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Pontos de Distribuicao</h1>
+
+<table class="table">
+	<tr>
+		<th>Origem</th>
+		<th>Destino</th>
+		<th>Distancia</th>
+	</tr>
+	<%= @resposta %>
+		<tr>
+			<td></td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	<% end %>	
+</table>
+):
+1:    <h1>Pontos de Distribuicao</h1>
+2:    
+3:    <table class="table">
+4:    	<tr>
+5:    		<th>Origem</th>
+6:    		<th>Destino</th>
+7:    		<th>Distancia</th>
+8:    	</tr>
+9:    	<%= @resposta %>
+10:    		<tr>
+11:    			<td></td>
+12:    			<td>1</td>
+13:    			<td>1</td>
+14:    		</tr>
+15:    	<% end %>	
+16:    </table>
+  
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ponto_distribuicao/index.html.erb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:56:28 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 122)
+Completed 200 OK in 958ms (Views: 273.4ms | ActiveRecord: 0.0ms | Allocations: 9264)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:56:53 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 124)
+Completed 200 OK in 905ms (Views: 222.2ms | ActiveRecord: 0.0ms | Allocations: 9305)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:57:03 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 121)
+Completed 200 OK in 965ms (Views: 179.0ms | ActiveRecord: 0.0ms | Allocations: 9246)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:57:18 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 120)
+Completed 200 OK in 759ms (Views: 238.0ms | ActiveRecord: 0.0ms | Allocations: 9250)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:57:55 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 124)
+Completed 200 OK in 656ms (Views: 166.5ms | ActiveRecord: 0.0ms | Allocations: 9253)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:58:14 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 124)
+Completed 200 OK in 872ms (Views: 294.6ms | ActiveRecord: 0.0ms | Allocations: 9254)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:58:20 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 124)
+Completed 200 OK in 1141ms (Views: 211.9ms | ActiveRecord: 0.0ms | Allocations: 9255)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:58:28 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 120)
+Completed 200 OK in 717ms (Views: 184.3ms | ActiveRecord: 0.0ms | Allocations: 9248)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:59:10 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 181.5ms | Allocations: 1941)
+Completed 500 Internal Server Error in 899ms (ActiveRecord: 0.0ms | Allocations: 4277)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000000ea04d68>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:59:20 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1781)
+Completed 500 Internal Server Error in 563ms (ActiveRecord: 0.0ms | Allocations: 3382)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000000e94e9c8>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:59:37 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 1941)
+Completed 500 Internal Server Error in 752ms (ActiveRecord: 0.0ms | Allocations: 4286)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<String:0x000000000e8b88d8>):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto %></td>
+    12: 			<td>1</td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 15:59:45 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 46)
+Completed 200 OK in 619ms (Views: 152.3ms | ActiveRecord: 0.0ms | Allocations: 8650)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:00:13 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 162)
+Completed 200 OK in 691ms (Views: 188.4ms | ActiveRecord: 0.0ms | Allocations: 9342)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:00:25 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 133)
+Completed 200 OK in 719ms (Views: 167.3ms | ActiveRecord: 0.0ms | Allocations: 9312)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:00:39 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 123)
+Completed 200 OK in 726ms (Views: 175.0ms | ActiveRecord: 0.0ms | Allocations: 9293)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:00:48 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 126)
+Completed 200 OK in 785ms (Views: 287.2ms | ActiveRecord: 0.0ms | Allocations: 9303)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:00:59 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 206)
+Completed 200 OK in 926ms (Views: 346.8ms | ActiveRecord: 0.0ms | Allocations: 9373)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:01:11 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2049.5ms | Allocations: 147215)
+Completed 500 Internal Server Error in 2710ms (ActiveRecord: 0.0ms | Allocations: 149589)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `origem' for #<#<Class:0x0000000010300b50>:0x00000000102fa4d0>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto[origem] %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:01:29 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1841.1ms | Allocations: 147260)
+Completed 500 Internal Server Error in 2351ms (ActiveRecord: 0.0ms | Allocations: 149645)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `origem' for #<#<Class:0x000000001043b600>:0x0000000010439cb0>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto[ponto][origem] %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:01:43 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2104.7ms | Allocations: 147203)
+Completed 500 Internal Server Error in 2684ms (ActiveRecord: 0.0ms | Allocations: 149586)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `origem' for #<#<Class:0x000000000fc75290>:0x000000000fc6f908>):
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto[0][origem] %></td>
+    12: 			<td>1</td>
+    13: 			<td>1</td>
+    14: 		</tr>
+  
+app/views/ponto_distribuicao/index.html.erb:11
+app/views/ponto_distribuicao/index.html.erb:9:in `each'
+app/views/ponto_distribuicao/index.html.erb:9
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:02:03 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 169)
+Completed 200 OK in 610ms (Views: 159.5ms | ActiveRecord: 0.0ms | Allocations: 9349)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 16:02:31 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 207)
+Completed 200 OK in 727ms (Views: 218.2ms | ActiveRecord: 0.0ms | Allocations: 9375)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:03:28 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 89)
+Completed 200 OK in 155ms (Views: 144.0ms | ActiveRecord: 0.0ms | Allocations: 7366)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:09:01 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 11.4ms | Allocations: 1865)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 80.6ms | Allocations: 2194)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms | Allocations: 3400)
+
+
+  
+ActionView::Template::Error (undefined method `new' for PontoDistribuicao:Module):
+    1: <%= form_for PontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:4
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:12:12 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 2018.5ms | Allocations: 147451)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2029.6ms | Allocations: 147779)
+Completed 500 Internal Server Error in 2099ms (ActiveRecord: 0.0ms | Allocations: 148998)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ponto_distribuicao' for #<#<Class:0x000000000e687000>:0x000000000e685700>
+Did you mean?  ponto_distribuicao_new_url):
+    1: <%= form_for ponto_distribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:12:58 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 1896.9ms | Allocations: 147434)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1908.6ms | Allocations: 147761)
+Completed 500 Internal Server Error in 1983ms (ActiveRecord: 0.0ms | Allocations: 148973)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pontoDistribuicao' for #<#<Class:0x000000000d013148>:0x000000000d011848>
+Did you mean?  ponto_distribuicao_new_url):
+    1: <%= form_for pontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:13:10 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 10.3ms | Allocations: 1859)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 28.0ms | Allocations: 2186)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms | Allocations: 3398)
+
+
+  
+ActionView::Template::Error (undefined method `new' for PontoDistribuicao:Module):
+    1: <%= form_for PontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:15:36 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 102.8ms | Allocations: 2078)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 121.0ms | Allocations: 2402)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.0ms | Allocations: 3613)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:method=>nil, :url=>{:controller=>"pontoDistribuicao"}}:Hash):
+    1: <%= form_for  method: @method, url: {controller: 'pontoDistribuicao'} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:16:27 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 9.7ms | Allocations: 1859)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 48.4ms | Allocations: 2183)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms | Allocations: 3394)
+
+
+  
+ActionView::Template::Error (undefined method `new' for PontoDistribuicao:Module):
+    1: <%= form_for PontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:16:35 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 5.0ms | Allocations: 1587)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1668)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 2136)
+
+
+  
+ActionView::Template::Error (undefined method `new' for PontoDistribuicao:Module):
+    1: <%= form_for PontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:16:40 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 4.2ms | Allocations: 1587)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1668)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms | Allocations: 2135)
+
+
+  
+ActionView::Template::Error (undefined method `new' for PontoDistribuicao:Module):
+    1: <%= form_for PontoDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:39:23 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (29.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (165.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePontoDeDistribuicaos (20190914192547)
+  [1m[35m (14.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePontoDeDistribuicaos (20190914192547)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mprimary::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190914192547"]]
+  [1m[35m (102.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-14 19:41:43.218036"], ["updated_at", "2019-09-14 19:41:43.218036"]]
+  [1m[35m (154.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:43:27 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 59.6ms | Allocations: 1803)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 112.3ms | Allocations: 2127)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.3ms | Allocations: 3343)
+
+
+  
+ActionView::Template::Error (Could not find table 'ponto_de_distribuicaos'):
+    1: <%= form_for PontoDeDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:51:29 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 20.6ms | Allocations: 1513)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 31.1ms | Allocations: 1594)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms | Allocations: 2221)
+
+
+  
+ActionView::Template::Error (Could not find table 'ponto_de_distribuicaos'):
+    1: <%= form_for PontoDeDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+  
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePontoDeDistribuicaos (20190914192548)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ponto_de_distribuicaos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190914192548"]]
+  [1m[35m (204.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:53:04 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/_form.html.erb (Duration: 1249.4ms | Allocations: 8814)
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1260.3ms | Allocations: 8895)
+Completed 500 Internal Server Error in 1279ms (ActiveRecord: 11.5ms | Allocations: 9522)
+
+
+  
+ActionView::Template::Error (undefined method `origem' for #<PontoDeDistribuicao id: nil, created_at: nil, updated_at: nil>):
+    1: <%= form_for PontoDeDistribuicao.new, method: @method, url: {controller: 'pontoDistribuicao', action: @action} do |f| %>
+    2:   <div class="field">
+    3:     <%= f.label :origem %>
+    4:     <%= f.text_field :origem %>
+    5:   </div>
+    6:   <div class="field">
+    7:     <%= f.label :destino %>
+  
+app/views/ponto_distribuicao/_form.html.erb:4
+app/views/ponto_distribuicao/_form.html.erb:1
+app/views/ponto_distribuicao/new.html.erb:3
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 16:57:41 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 106)
+Completed 200 OK in 230ms (Views: 216.8ms | ActiveRecord: 0.0ms | Allocations: 8177)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:00:40 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 106)
+Completed 200 OK in 161ms (Views: 149.1ms | ActiveRecord: 0.0ms | Allocations: 8175)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:10:11 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 78.2ms | Allocations: 533)
+Completed 200 OK in 236ms (Views: 225.0ms | ActiveRecord: 0.0ms | Allocations: 8603)
+
+
+Started POST "/create" for ::1 at 2019-09-14 17:10:53 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:11:27 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 510)
+Completed 200 OK in 184ms (Views: 172.9ms | ActiveRecord: 0.0ms | Allocations: 8580)
+
+
+Started POST "/ponto_distribuicao/ponto_distribuicao/create" for ::1 at 2019-09-14 17:13:34 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/ponto_distribuicao/ponto_distribuicao/create"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:13:53 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 514)
+Completed 200 OK in 273ms (Views: 252.6ms | ActiveRecord: 0.0ms | Allocations: 8582)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:14:08 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 511)
+Completed 200 OK in 190ms (Views: 183.9ms | ActiveRecord: 0.0ms | Allocations: 8573)
+
+
+Started POST "/ponto_distribuicao/create" for ::1 at 2019-09-14 17:14:18 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/ponto_distribuicao/create"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:15:10 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 268)
+Completed 200 OK in 132ms (Views: 130.0ms | ActiveRecord: 0.0ms | Allocations: 7566)
+
+
+Started POST "/ponto_distribuicao/create" for ::1 at 2019-09-14 17:15:21 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"authenticity_token"=>"iWO+7WCkvPovztyELTsEMeBm3MvcNwcvBgOJjkRKpwN7i+S6PUfU1n1LsbT3TmkyZB3tfVkn3hBPpYPw8kbnBg==", "origem"=>"Q", "destino"=>"A", "distancia"=>"23", "commit"=>"Salvar"}
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 1370)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 2066)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto["origem"] %></td>
+    12: 			<td><%= ponto["destino"] %></td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create" for ::1 at 2019-09-14 17:17:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ponto_distribuicao/create"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/create" for ::1 at 2019-09-14 17:18:29 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1366)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms | Allocations: 2560)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: 		<th>Destino</th>
+     7: 		<th>Distancia</th>
+     8: 	</tr>
+     9: 	<% @resposta.each do |ponto| %>
+    10: 		<tr>
+    11: 			<td><%= ponto["origem"] %></td>
+    12: 			<td><%= ponto["destino"] %></td>
+  
+app/views/ponto_distribuicao/index.html.erb:9
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create" for ::1 at 2019-09-14 17:19:35 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as HTML
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 63ms (ActiveRecord: 0.0ms | Allocations: 710)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:19:37 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 13)
+Completed 200 OK in 889ms (Views: 112.8ms | ActiveRecord: 0.0ms | Allocations: 8601)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:27:02 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 454)
+Completed 200 OK in 131ms (Views: 119.6ms | ActiveRecord: 0.0ms | Allocations: 7886)
+
+
+Started GET "/ponto_distribuicao/create?origem=aa&destino=sd&distancia=dsdd&commit=Salvar" for ::1 at 2019-09-14 17:27:09 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"aa", "destino"=>"sd", "distancia"=>"dsdd", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 573)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:28:15 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 211)
+Completed 200 OK in 119ms (Views: 115.9ms | ActiveRecord: 0.0ms | Allocations: 7508)
+
+
+Started GET "/ponto_distribuicao/create?origem=tert&destino=tete&distancia=234324&commit=Salvar" for ::1 at 2019-09-14 17:28:24 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"tert", "destino"=>"tete", "distancia"=>"234324", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create?origem=tert&destino=tete&distancia=234324&commit=Salvar" for ::1 at 2019-09-14 17:29:03 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"tert", "destino"=>"tete", "distancia"=>"234324", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 583)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create?origem=tert&destino=tete&distancia=234324" for ::1 at 2019-09-14 17:30:09 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"tert", "destino"=>"tete", "distancia"=>"234324"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create?origem=tert&destino=tete&distancia=234" for ::1 at 2019-09-14 17:30:20 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"tert", "destino"=>"tete", "distancia"=>"234"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:30:59 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 211)
+Completed 200 OK in 160ms (Views: 157.4ms | ActiveRecord: 0.0ms | Allocations: 7490)
+
+
+Started GET "/ponto_distribuicao/create?origem=rerw&destino=rwr&distancia=rwrw&commit=Salvar" for ::1 at 2019-09-14 17:31:07 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"rerw", "destino"=>"rwr", "distancia"=>"rwrw", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Redirected to 
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1100)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=rerw&destino=rwr&distancia=rwrw&commit=Salvar" for ::1 at 2019-09-14 17:31:28 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"rerw", "destino"=>"rwr", "distancia"=>"rwrw", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 689)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:31:29 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 13)
+Completed 200 OK in 857ms (Views: 160.7ms | ActiveRecord: 0.0ms | Allocations: 8563)
+
+
+Started GET "/ponto_distribuicao/create?origem=rerw&destino=rwr&distancia=rwrw&commit=Salvar" for ::1 at 2019-09-14 17:31:34 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"rerw", "destino"=>"rwr", "distancia"=>"rwrw", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:31:35 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 581ms (Views: 206.0ms | ActiveRecord: 0.0ms | Allocations: 8260)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:31:43 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 211)
+Completed 200 OK in 149ms (Views: 143.4ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started GET "/ponto_distribuicao/create?origem=r&destino=r&distancia=re&commit=Salvar" for ::1 at 2019-09-14 17:31:55 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"r", "destino"=>"r", "distancia"=>"re", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:31:55 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 13)
+Completed 200 OK in 452ms (Views: 124.1ms | ActiveRecord: 0.0ms | Allocations: 8253)
+
+
+Started GET "/ponto_distribuicao/create?origem=r&destino=r&distancia=re&commit=Salvar" for ::1 at 2019-09-14 17:33:05 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"r", "destino"=>"r", "distancia"=>"re", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 689)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:33:07 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 434ms (Views: 161.3ms | ActiveRecord: 0.0ms | Allocations: 8410)
+
+
+Started GET "/ponto_distribuicao/create?origem=r&destino=r&distancia=re&commit=Salvar" for ::1 at 2019-09-14 17:33:13 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"r", "destino"=>"r", "distancia"=>"re", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:33:13 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 13)
+Completed 200 OK in 553ms (Views: 159.8ms | ActiveRecord: 0.0ms | Allocations: 8252)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:33:15 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 211)
+Completed 200 OK in 178ms (Views: 172.0ms | ActiveRecord: 0.0ms | Allocations: 7340)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:33:18 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:33:19 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 432ms (Views: 109.5ms | ActiveRecord: 0.0ms | Allocations: 8249)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:33:23 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:33:23 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 13)
+Completed 200 OK in 424ms (Views: 119.8ms | ActiveRecord: 0.0ms | Allocations: 8263)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:33:49 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to 
+Completed 500 Internal Server Error in 1581ms (ActiveRecord: 0.0ms | Allocations: 97783)
+
+
+  
+NoMethodError (undefined method `index_url' for #<PontoDistribuicaoController:0x000000001013c670>
+Did you mean?  index):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:34:53 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001index
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:35:21 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001ponto_distribuicao/index
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:36:41 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms | Allocations: 692)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:36:42 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 535ms (Views: 124.2ms | ActiveRecord: 0.0ms | Allocations: 8417)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:36:56 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to 
+Completed 500 Internal Server Error in 1359ms (ActiveRecord: 0.0ms | Allocations: 97856)
+
+
+  
+NoMethodError (undefined method `back_url' for #<PontoDistribuicaoController:0x0000000010251650>):
+  
+app/controllers/ponto_distribuicao_controller.rb:17:in `create'
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:37:36 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index.html
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 699)
+
+
+Started GET "/ponto_distribuicao/index.html" for ::1 at 2019-09-14 17:37:37 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 13)
+Completed 200 OK in 407ms (Views: 102.4ms | ActiveRecord: 0.0ms | Allocations: 8411)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:37:45 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 211)
+Completed 200 OK in 157ms (Views: 155.0ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 17:38:31 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 211)
+Completed 200 OK in 147ms (Views: 140.1ms | ActiveRecord: 0.0ms | Allocations: 7505)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:38:35 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 683)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:38:35 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 406ms (Views: 96.5ms | ActiveRecord: 0.0ms | Allocations: 8260)
+
+
+Started GET "/ponto_distribuicao/create?origem=&destino=&distancia=&commit=Salvar" for ::1 at 2019-09-14 17:38:37 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"", "destino"=>"", "distancia"=>"", "commit"=>"Salvar"}
+Redirected to http://localhost:3001/ponto_distribuicao/index
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:38:38 -0300
+Processing by PontoDistribuicaoController#index as JS
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 403ms (Views: 112.0ms | ActiveRecord: 0.0ms | Allocations: 8258)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 17:38:44 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 784ms (Views: 113.7ms | ActiveRecord: 0.0ms | Allocations: 8246)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:27:37 -0300
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 40.5ms | Allocations: 13)
+Completed 200 OK in 19079ms (Views: 11609.7ms | ActiveRecord: 0.0ms | Allocations: 8291)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:36:40 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:17: syntax error, unexpected ':', expecting keyword_end
+  	@origem: params['origem']
+  	       ^
+C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+  	@destino: params['destino']
+  	        ^
+C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:19: syntax error, unexpected ':', expecting keyword_end
+  	@distancia: params['distancia']
+  	          ^):
+  
+app/controllers/ponto_distribuicao_controller.rb:17: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:19: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:17: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:19: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:17: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:19: syntax error, unexpected ':', expecting keyword_end
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:37:50 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 2438ms (ActiveRecord: 0.0ms | Allocations: 1398)
+
+
+  
+RestClient::InternalServerError (500 Internal Server Error):
+  
+app/controllers/ponto_distribuicao_controller.rb:6:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:38:12 -0300
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 1607ms (ActiveRecord: 0.0ms | Allocations: 1406)
+
+
+  
+RestClient::InternalServerError (500 Internal Server Error):
+  
+app/controllers/ponto_distribuicao_controller.rb:6:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:39:58 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 100.7ms | Allocations: 631)
+Completed 200 OK in 1442ms (Views: 395.3ms | ActiveRecord: 0.0ms | Allocations: 9861)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:41:24 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 239)
+Completed 200 OK in 747ms (Views: 180.3ms | ActiveRecord: 0.0ms | Allocations: 9399)
+
+
+Started GET "/new" for ::1 at 2019-09-14 23:41:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:41:34 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 27)
+Completed 200 OK in 858ms (Views: 170.2ms | ActiveRecord: 0.0ms | Allocations: 8262)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:41:44 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 237)
+Completed 200 OK in 739ms (Views: 207.5ms | ActiveRecord: 0.0ms | Allocations: 9399)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 23:41:48 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 60.0ms | Allocations: 454)
+Completed 200 OK in 174ms (Views: 163.4ms | ActiveRecord: 0.0ms | Allocations: 7736)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 23:42:00 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 210)
+Completed 200 OK in 323ms (Views: 320.4ms | ActiveRecord: 0.0ms | Allocations: 7342)
+
+
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=25&commit=Salvar" for ::1 at 2019-09-14 23:42:08 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"25", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 592)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-14 23:42:30 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 26)
+Completed 200 OK in 591ms (Views: 138.7ms | ActiveRecord: 0.0ms | Allocations: 8261)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 23:42:36 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 210)
+Completed 200 OK in 165ms (Views: 158.9ms | ActiveRecord: 0.0ms | Allocations: 7347)
+
+
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:42:51 -0300
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 589)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:44:30 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 595)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:45:59 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+...stino+"&distancia="+@distancia"
+...                              ^
+C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:28: unterminated string meets end of file
+C:/Users/Positivo/Documents/pontoDistribuicao/app/controllers/ponto_distribuicao_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/ponto_distribuicao_controller.rb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:28: unterminated string meets end of file
+app/controllers/ponto_distribuicao_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:28: unterminated string meets end of file
+app/controllers/ponto_distribuicao_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/ponto_distribuicao_controller.rb:28: unterminated string meets end of file
+app/controllers/ponto_distribuicao_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:46:32 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 602)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:49:18 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 595)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:49:49 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 595)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:21:in `create'
+Started GET "/ponto_distribuicao/create?origem=W&destino=Y&distancia=15&commit=Salvar" for ::1 at 2019-09-14 23:50:38 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#create as JS
+  Parameters: {"origem"=>"W", "destino"=>"Y", "distancia"=>"15", "commit"=>"Salvar"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 579)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  
+app/controllers/ponto_distribuicao_controller.rb:18:in `create'
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-14 23:59:46 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 151.8ms | Allocations: 519)
+Completed 200 OK in 596ms (Views: 575.6ms | ActiveRecord: 0.0ms | Allocations: 8595)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:00:59 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 53.9ms | Allocations: 455)
+Completed 200 OK in 318ms (Views: 282.4ms | ActiveRecord: 0.0ms | Allocations: 8522)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:01:51 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 414)
+Completed 200 OK in 245ms (Views: 231.0ms | ActiveRecord: 0.0ms | Allocations: 8480)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:06:44 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 111)
+Completed 200 OK in 286ms (Views: 259.9ms | ActiveRecord: 0.0ms | Allocations: 8175)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:07:36 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 111)
+Completed 200 OK in 207ms (Views: 189.3ms | ActiveRecord: 0.0ms | Allocations: 8234)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:07:44 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4)
+Completed 200 OK in 209ms (Views: 206.1ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:09:38 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 193ms (Views: 190.2ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:09:54 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 230ms (Views: 227.4ms | ActiveRecord: 0.0ms | Allocations: 7137)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:15:55 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 317ms (Views: 305.9ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:16:48 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 00:16:50 -0300
+Completed 200 OK in 1785ms (Views: 1579.6ms | ActiveRecord: 0.0ms | Allocations: 8233)
+
+
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 237)
+Completed 200 OK in 2526ms (Views: 273.2ms | ActiveRecord: 0.0ms | Allocations: 8910)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:16:58 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 137ms (Views: 134.1ms | ActiveRecord: 0.0ms | Allocations: 7139)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:17:04 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 233ms (Views: 231.0ms | ActiveRecord: 0.0ms | Allocations: 7137)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:18:37 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 170ms (Views: 166.3ms | ActiveRecord: 0.0ms | Allocations: 7139)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:22:02 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 229ms (Views: 218.8ms | ActiveRecord: 0.0ms | Allocations: 7133)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 00:22:20 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 252ms (Views: 247.8ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 15:48:25 -0300
+  [1m[35m (48.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PontoDistribuicaoController#index as HTML
+Completed 500 Internal Server Error in 2836ms (ActiveRecord: 0.0ms | Allocations: 3252)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:3000 (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. - connect(2) for "localhost" port 3000)):
+  
+app/controllers/ponto_distribuicao_controller.rb:6:in `index'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 15:53:55 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 255)
+Completed 200 OK in 43843ms (Views: 41060.2ms | ActiveRecord: 0.0ms | Allocations: 1420363)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 15:56:33 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 36.8ms | Allocations: 121)
+Completed 200 OK in 161ms (Views: 152.4ms | ActiveRecord: 0.0ms | Allocations: 7444)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:00:27 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 111)
+Completed 200 OK in 173ms (Views: 165.1ms | ActiveRecord: 0.0ms | Allocations: 8212)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:11:45 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 154)
+Completed 200 OK in 260ms (Views: 251.9ms | ActiveRecord: 0.0ms | Allocations: 8264)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:11:49 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 5)
+Completed 200 OK in 147ms (Views: 143.6ms | ActiveRecord: 0.0ms | Allocations: 7179)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:14:29 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:16:59 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 4)
+Completed 200 OK in 177ms (Views: 165.8ms | ActiveRecord: 0.0ms | Allocations: 7169)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:23:00 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 36.3ms | Allocations: 144)
+Completed 200 OK in 1690ms (Views: 1677.0ms | ActiveRecord: 0.0ms | Allocations: 8248)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:24:07 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 62.5ms | Allocations: 145)
+Completed 200 OK in 1178ms (Views: 1124.7ms | ActiveRecord: 0.0ms | Allocations: 8308)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:24:46 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 42.3ms | Allocations: 145)
+Completed 200 OK in 380ms (Views: 328.7ms | ActiveRecord: 0.0ms | Allocations: 8241)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:25:16 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 145)
+Completed 200 OK in 297ms (Views: 273.7ms | ActiveRecord: 0.0ms | Allocations: 8246)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:25:42 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 35.5ms | Allocations: 145)
+Completed 200 OK in 309ms (Views: 262.5ms | ActiveRecord: 0.0ms | Allocations: 8248)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:26:32 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 38.9ms | Allocations: 144)
+Completed 200 OK in 346ms (Views: 333.8ms | ActiveRecord: 0.0ms | Allocations: 8243)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:27:00 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 192ms (Views: 170.0ms | ActiveRecord: 0.0ms | Allocations: 7173)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:30:35 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 151)
+Completed 200 OK in 464ms (Views: 448.5ms | ActiveRecord: 0.0ms | Allocations: 8254)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:31:19 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 151)
+Completed 200 OK in 1856ms (Views: 1832.2ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:32:27 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 147)
+Completed 200 OK in 474ms (Views: 465.5ms | ActiveRecord: 0.0ms | Allocations: 8316)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 16:32:38 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 130.1ms | Allocations: 247)
+Completed 200 OK in 2024ms (Views: 326.1ms | ActiveRecord: 0.0ms | Allocations: 8701)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:32:53 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 172ms (Views: 169.2ms | ActiveRecord: 0.0ms | Allocations: 7184)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:33:06 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 319ms (Views: 317.4ms | ActiveRecord: 0.0ms | Allocations: 7175)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 16:34:02 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 41)
+Completed 200 OK in 1244ms (Views: 364.5ms | ActiveRecord: 0.0ms | Allocations: 8373)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:34:26 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 441ms (Views: 438.9ms | ActiveRecord: 0.0ms | Allocations: 7186)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:34:40 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+Completed 200 OK in 209ms (Views: 205.8ms | ActiveRecord: 0.0ms | Allocations: 7170)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 16:34:53 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 41)
+Completed 200 OK in 1076ms (Views: 254.1ms | ActiveRecord: 0.0ms | Allocations: 8373)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:38:06 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 273ms (Views: 271.4ms | ActiveRecord: 0.0ms | Allocations: 7168)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:38:16 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 207ms (Views: 203.5ms | ActiveRecord: 0.0ms | Allocations: 7176)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:38:28 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 140ms (Views: 137.0ms | ActiveRecord: 0.0ms | Allocations: 7173)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 16:38:31 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 41)
+Completed 200 OK in 721ms (Views: 144.7ms | ActiveRecord: 0.0ms | Allocations: 8371)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 16:38:38 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 4)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.0ms | Allocations: 7172)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 16:55:06 -0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 53)
+Completed 200 OK in 1455ms (Views: 211.8ms | ActiveRecord: 0.0ms | Allocations: 8442)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:17:06 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ships/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:15:30 -0300
+  [1m[35m (76.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 36.3ms | Allocations: 53)
+Completed 200 OK in 4675ms (Views: 2280.6ms | ActiveRecord: 0.0ms | Allocations: 8481)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:16:47 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 4)
+Completed 200 OK in 875ms (Views: 813.5ms | ActiveRecord: 0.0ms | Allocations: 7179)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:24:53 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 337ms (Views: 331.8ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:25:10 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 4)
+Completed 200 OK in 224ms (Views: 218.9ms | ActiveRecord: 0.0ms | Allocations: 7291)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:25:12 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 57)
+Completed 200 OK in 1072ms (Views: 280.1ms | ActiveRecord: 0.0ms | Allocations: 8477)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:25:21 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 695ms (Views: 665.8ms | ActiveRecord: 0.0ms | Allocations: 7206)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:25:38 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 415ms (Views: 404.3ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:25:43 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 56)
+Completed 200 OK in 1812ms (Views: 414.0ms | ActiveRecord: 0.0ms | Allocations: 8486)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:26:33 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 4)
+Completed 200 OK in 237ms (Views: 223.9ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:26:44 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4)
+Completed 200 OK in 592ms (Views: 543.6ms | ActiveRecord: 0.0ms | Allocations: 7181)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:26:54 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 60)
+Completed 200 OK in 1080ms (Views: 184.0ms | ActiveRecord: 0.0ms | Allocations: 8614)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:29:01 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 184ms (Views: 168.6ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:29:13 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4)
+Completed 200 OK in 208ms (Views: 204.0ms | ActiveRecord: 0.0ms | Allocations: 7175)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:30:49 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 38.8ms | Allocations: 152)
+Completed 200 OK in 316ms (Views: 249.1ms | ActiveRecord: 0.0ms | Allocations: 8261)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:31:06 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 31.9ms | Allocations: 276)
+Completed 200 OK in 826ms (Views: 172.3ms | ActiveRecord: 0.0ms | Allocations: 8881)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:31:23 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 262ms (Views: 259.0ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:32:18 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 268ms (Views: 258.6ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:32:38 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 65)
+Completed 200 OK in 1072ms (Views: 174.6ms | ActiveRecord: 0.0ms | Allocations: 8525)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:51:20 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 449ms (Views: 406.3ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/ponto_distribuicao/new" for ::1 at 2019-09-15 19:51:33 -0300
+Processing by PontoDistribuicaoController#new as HTML
+  Rendering ponto_distribuicao/new.html.erb within layouts/application
+  Rendered ponto_distribuicao/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 177ms (Views: 171.8ms | ActiveRecord: 0.0ms | Allocations: 7176)
+
+
+Started GET "/ponto_distribuicao/index" for ::1 at 2019-09-15 19:57:18 -0300
+Processing by PontoDistribuicaoController#index as HTML
+  Rendering ponto_distribuicao/index.html.erb within layouts/application
+  Rendered ponto_distribuicao/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 68)
+Completed 200 OK in 783ms (Views: 219.4ms | ActiveRecord: 0.0ms | Allocations: 8539)
+
+
