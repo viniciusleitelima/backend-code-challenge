@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origem:</strong>
+  <%= @ship.origem %>
+</p>
+
+<p>
+  <strong>Destino:</strong>
+  <%= @ship.destino %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @ship.peso %>
+</p>
+
+<%= link_to 'Edit', edit_ship_path(@ship) %> |
+<%= link_to 'Back', ships_path %>

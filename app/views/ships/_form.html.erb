@@ -1,0 +1,12 @@
+
+<%= form_with(model: ship, local: true) do |form| %>
+    
+    <div class="field">
+    <%= form.label :peso %>
+    <%= form.text_field :peso %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

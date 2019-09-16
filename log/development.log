@@ -1,0 +1,1755 @@
+  [1m[35m (37.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/ships/index" for ::1 at 2019-09-15 00:36:06 -0300
+  [1m[35m (66.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (16.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (206.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (101.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShips (20190915033225)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ships" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "origem" varchar, "destino" varchar, "peso" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190915033225"]]
+  [1m[35m (94.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-15 03:37:15.967203"], ["updated_at", "2019-09-15 03:37:15.967203"]]
+  [1m[35m (107.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ships/index" for ::1 at 2019-09-15 00:38:41 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShipsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mShip Load (0.9ms)[0m  [1m[34mSELECT "ships".* FROM "ships" WHERE "ships"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/ships_controller.rb:67:in `set_ship'
+Completed 404 Not Found in 179ms (ActiveRecord: 6.7ms | Allocations: 2877)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ship with 'id'=index):
+  
+app/controllers/ships_controller.rb:67:in `set_ship'
+Started GET "/ships/" for ::1 at 2019-09-15 00:40:51 -0300
+Processing by ShipsController#index as HTML
+  Rendering ships/index.html.erb within layouts/application
+  [1m[36mShip Load (0.9ms)[0m  [1m[34mSELECT "ships".* FROM "ships"[0m
+  ↳ app/views/ships/index.html.erb:16
+  Rendered ships/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 972)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in C:/Users/Positivo/Documents/desafioRakuten/public/packs
+Completed 200 OK in 82768ms (Views: 82756.0ms | ActiveRecord: 0.9ms | Allocations: 1442339)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 00:42:44 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 711.8ms | Allocations: 5060)
+  Rendered ships/new.html.erb within layouts/application (Duration: 721.5ms | Allocations: 5430)
+Completed 200 OK in 907ms (Views: 879.3ms | ActiveRecord: 0.0ms | Allocations: 18078)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 00:51:53 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 2212)
+
+
+  
+NameError (uninitialized constant ShipsController::RestClient):
+  
+app/controllers/ships_controller.rb:17:in `new'
+Started GET "/ships/new" for ::1 at 2019-09-15 00:52:20 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 00:53:30 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 15.3ms | Allocations: 1674)
+  Rendered ships/new.html.erb within layouts/application (Duration: 31.5ms | Allocations: 2016)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms | Allocations: 3283)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <% if ship.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ship.errors.count, "error") %> prohibited this ship from being saved:</h2>
+    5: 
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 00:54:26 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 49.6ms | Allocations: 1660)
+  Rendered ships/new.html.erb within layouts/application (Duration: 83.5ms | Allocations: 2000)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms | Allocations: 3220)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <% if ship.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ship.errors.count, "error") %> prohibited this ship from being saved:</h2>
+    5: 
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 00:55:45 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 7.3ms | Allocations: 1363)
+  Rendered ships/new.html.erb within layouts/application (Duration: 65.9ms | Allocations: 1443)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.0ms | Allocations: 1945)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <% if ship.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ship.errors.count, "error") %> prohibited this ship from being saved:</h2>
+    5: 
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 00:56:12 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 00:56:20 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 4.4ms | Allocations: 1363)
+  Rendered ships/new.html.erb within layouts/application (Duration: 56.3ms | Allocations: 1443)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms | Allocations: 2104)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <% if ship.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(ship.errors.count, "error") %> prohibited this ship from being saved:</h2>
+    5: 
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 00:56:46 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 20.5ms | Allocations: 1902)
+  Rendered ships/new.html.erb within layouts/application (Duration: 58.5ms | Allocations: 2262)
+Completed 200 OK in 410ms (Views: 400.9ms | ActiveRecord: 0.0ms | Allocations: 11899)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 00:57:59 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 11.6ms | Allocations: 1543)
+  Rendered ships/new.html.erb within layouts/application (Duration: 23.8ms | Allocations: 1914)
+Completed 200 OK in 212ms (Views: 200.6ms | ActiveRecord: 0.0ms | Allocations: 11545)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 00:58:57 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 6.9ms | Allocations: 1548)
+  Rendered ships/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1907)
+Completed 200 OK in 194ms (Views: 180.1ms | ActiveRecord: 0.0ms | Allocations: 11539)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 00:59:17 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 13.1ms | Allocations: 1555)
+  Rendered ships/new.html.erb within layouts/application (Duration: 30.6ms | Allocations: 1914)
+Completed 200 OK in 232ms (Views: 222.9ms | ActiveRecord: 0.0ms | Allocations: 11543)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:00:49 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:00:58 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 12.3ms | Allocations: 1710)
+  Rendered ships/new.html.erb within layouts/application (Duration: 45.7ms | Allocations: 1810)
+Completed 200 OK in 212ms (Views: 200.8ms | ActiveRecord: 0.0ms | Allocations: 10696)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:01:49 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:01:55 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 10.5ms | Allocations: 1913)
+  Rendered ships/new.html.erb within layouts/application (Duration: 43.5ms | Allocations: 2273)
+Completed 200 OK in 240ms (Views: 228.6ms | ActiveRecord: 0.0ms | Allocations: 11913)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:03:03 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 3082.4ms | Allocations: 147706)
+  Rendered ships/new.html.erb within layouts/application (Duration: 3190.4ms | Allocations: 148049)
+Completed 500 Internal Server Error in 3284ms (ActiveRecord: 0.0ms | Allocations: 149276)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `teste' for #<#<Class:0x000000000dfb3030>:0x000000000dfb1000>
+Did you mean?  test):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <%= teste %>
+    3:   <label>Origem</label>
+    4: <select>
+    5:   <option>
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 01:03:29 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 14.9ms | Allocations: 1578)
+  Rendered ships/new.html.erb within layouts/application (Duration: 38.8ms | Allocations: 1938)
+Completed 200 OK in 285ms (Views: 268.7ms | ActiveRecord: 0.0ms | Allocations: 11574)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:04:34 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:04:40 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 8.6ms | Allocations: 1911)
+  Rendered ships/new.html.erb within layouts/application (Duration: 22.8ms | Allocations: 2271)
+Completed 200 OK in 198ms (Views: 184.2ms | ActiveRecord: 0.0ms | Allocations: 11914)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:05:12 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+...{ redirect_to @ship, @resposta: 'teste'  }
+...                              ^
+C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+...to @ship, @resposta: 'teste'  }
+...                              ^
+C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/ships/new" for ::1 at 2019-09-15 01:05:37 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:05:42 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 1935.8ms | Allocations: 147707)
+  Rendered ships/new.html.erb within layouts/application (Duration: 1951.7ms | Allocations: 148047)
+Completed 500 Internal Server Error in 2033ms (ActiveRecord: 0.0ms | Allocations: 149278)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resposta' for #<#<Class:0x000000000d4a4d38>:0x000000000d49f4a0>
+Did you mean?  response):
+    1: <%= form_with(model: ship, local: true) do |form| %>
+    2:   <%= resposta %>
+    3:   <label>Origem</label>
+    4: <select>
+    5:   <option>
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:3
+Started GET "/ships/new" for ::1 at 2019-09-15 01:06:10 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+... redirect_to @ship, @@resposta: 'teste'  }
+...                              ^
+C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+...o @ship, @@resposta: 'teste'  }
+...                              ^
+C:/Users/Positivo/Documents/desafioRakuten/app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/ships_controller.rb:21: syntax error, unexpected ':', expecting '}'
+app/controllers/ships_controller.rb:21: syntax error, unexpected '}', expecting keyword_end
+app/controllers/ships_controller.rb:78: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/ships/new" for ::1 at 2019-09-15 01:09:45 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:10:28 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 20.1ms | Allocations: 1913)
+  Rendered ships/new.html.erb within layouts/application (Duration: 45.9ms | Allocations: 2273)
+Completed 200 OK in 288ms (Views: 262.2ms | ActiveRecord: 0.0ms | Allocations: 11913)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:13:32 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 9.0ms | Allocations: 1542)
+  Rendered ships/new.html.erb within layouts/application (Duration: 28.3ms | Allocations: 1922)
+Completed 200 OK in 235ms (Views: 226.8ms | ActiveRecord: 0.0ms | Allocations: 11550)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:13:34 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 5.5ms | Allocations: 1364)
+  Rendered ships/new.html.erb within layouts/application (Duration: 119.3ms | Allocations: 1730)
+Completed 200 OK in 353ms (Views: 351.5ms | ActiveRecord: 0.0ms | Allocations: 11549)
+
+
+Started GET "/ships/ajax_info.txt" for ::1 at 2019-09-15 01:13:38 -0300
+Processing by ShipsController#show as TEXT
+  Parameters: {"id"=>"ajax_info"}
+Completed 406 Not Acceptable in 43ms (ActiveRecord: 0.0ms | Allocations: 1410)
+
+
+  
+ActionController::UnknownFormat (ShipsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/plain"]
+request.variant: []):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/ajax_info.txt" for ::1 at 2019-09-15 01:13:56 -0300
+Processing by ShipsController#show as TEXT
+  Parameters: {"id"=>"ajax_info"}
+Completed 406 Not Acceptable in 8ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionController::UnknownFormat (ShipsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/plain"]
+request.variant: []):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/ajax_info.txt" for ::1 at 2019-09-15 01:14:00 -0300
+Processing by ShipsController#show as TEXT
+  Parameters: {"id"=>"ajax_info"}
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionController::UnknownFormat (ShipsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/plain"]
+request.variant: []):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/ajax_info.txt" for ::1 at 2019-09-15 01:14:46 -0300
+Processing by ShipsController#show as TEXT
+  Parameters: {"id"=>"ajax_info"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionController::UnknownFormat (ShipsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/plain"]
+request.variant: []):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/ajax_info.txt" for ::1 at 2019-09-15 01:14:56 -0300
+Processing by ShipsController#show as TEXT
+  Parameters: {"id"=>"ajax_info"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionController::UnknownFormat (ShipsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/plain"]
+request.variant: []):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:16:20 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 9.5ms | Allocations: 1543)
+  Rendered ships/new.html.erb within layouts/application (Duration: 31.2ms | Allocations: 1923)
+Completed 200 OK in 262ms (Views: 245.1ms | ActiveRecord: 0.0ms | Allocations: 11553)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:31:15 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:31:20 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 9.0ms | Allocations: 1883)
+  Rendered ships/new.html.erb within layouts/application (Duration: 27.0ms | Allocations: 2255)
+Completed 200 OK in 345ms (Views: 325.5ms | ActiveRecord: 0.0ms | Allocations: 11892)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:33:57 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 7.9ms | Allocations: 1540)
+  Rendered ships/new.html.erb within layouts/application (Duration: 32.2ms | Allocations: 1928)
+Completed 200 OK in 230ms (Views: 216.3ms | ActiveRecord: 0.0ms | Allocations: 11555)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:34:29 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 6.6ms | Allocations: 1540)
+  Rendered ships/new.html.erb within layouts/application (Duration: 20.0ms | Allocations: 1928)
+Completed 200 OK in 216ms (Views: 206.6ms | ActiveRecord: 0.0ms | Allocations: 11554)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:40:51 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:40:57 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 6.6ms | Allocations: 1884)
+  Rendered ships/new.html.erb within layouts/application (Duration: 53.6ms | Allocations: 2273)
+Completed 200 OK in 249ms (Views: 230.2ms | ActiveRecord: 0.0ms | Allocations: 11974)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:43:39 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 9.2ms | Allocations: 1364)
+  Rendered ships/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1464)
+Completed 200 OK in 174ms (Views: 170.1ms | ActiveRecord: 0.0ms | Allocations: 10189)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:52:22 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:52:28 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 19.0ms | Allocations: 1883)
+  Rendered ships/new.html.erb within layouts/application (Duration: 73.6ms | Allocations: 2247)
+Completed 200 OK in 1165ms (Views: 1153.3ms | ActiveRecord: 0.0ms | Allocations: 11888)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:52:56 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 5.9ms | Allocations: 1540)
+  Rendered ships/new.html.erb within layouts/application (Duration: 23.4ms | Allocations: 1918)
+Completed 200 OK in 260ms (Views: 245.0ms | ActiveRecord: 0.0ms | Allocations: 11548)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:55:45 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 14.1ms | Allocations: 1539)
+  Rendered ships/new.html.erb within layouts/application (Duration: 240.3ms | Allocations: 1973)
+Completed 200 OK in 502ms (Views: 479.6ms | ActiveRecord: 0.0ms | Allocations: 11606)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:56:40 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 8.6ms | Allocations: 1592)
+  Rendered ships/new.html.erb within layouts/application (Duration: 86.1ms | Allocations: 1970)
+Completed 200 OK in 411ms (Views: 398.0ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 01:59:19 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 01:59:27 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 23.6ms | Allocations: 1744)
+  Rendered ships/new.html.erb within layouts/application (Duration: 135.9ms | Allocations: 1844)
+Completed 200 OK in 373ms (Views: 365.4ms | ActiveRecord: 0.0ms | Allocations: 10735)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 02:01:03 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:01:08 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 12.0ms | Allocations: 1743)
+  Rendered ships/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1844)
+Completed 200 OK in 198ms (Views: 189.7ms | ActiveRecord: 0.0ms | Allocations: 10739)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 02:07:44 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 62.6ms | Allocations: 1396)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms | Allocations: 2618)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: <%= @resposta %>
+    4: <select name="user_id">
+    5:     <%= @resposta.each do |user| %>
+    6:       <option value="<%= user.id %>"><%= 'user.name' %></option>
+    7:     <% end %>
+    8:   </select>
+  
+app/views/ships/new.html.erb:5
+Started GET "/ships/new" for ::1 at 2019-09-15 02:11:55 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:12:10 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 22.4ms | Allocations: 1212)
+  Rendered ships/new.html.erb within layouts/application (Duration: 51.7ms | Allocations: 1570)
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms | Allocations: 2794)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% resp = RestClient.get "http://localhost:3000/api/v1/distancias.json"
+    @resposta = JSON.parse(resp.body)  %
+
+<%= form_with(model: ship, local: true) do |form| %>
+    <%= f.select :id, @resposta %>
+    <div class="field">
+    <%= form.label :peso %>
+    <%= form.text_field :peso %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <% resp = RestClient.get "http://localhost:3000/api/v1/distancias.json"
+2:        @resposta = JSON.parse(resp.body)  %
+3:    
+4:    <%= form_with(model: ship, local: true) do |form| %>
+5:        <%= f.select :id, @resposta %>
+6:        <div class="field">
+7:        <%= form.label :peso %>
+8:        <%= form.text_field :peso %>
+9:      </div>
+10:    
+11:      <div class="actions">
+12:        <%= form.submit %>
+13:      </div>
+14:    <% end %>
+  
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/_form.html.erb:4: syntax error, unexpected '<'
+app/views/ships/_form.html.erb:16: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:12:38 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 99.1ms | Allocations: 1630)
+  Rendered ships/new.html.erb within layouts/application (Duration: 124.2ms | Allocations: 1988)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.0ms | Allocations: 3206)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000000da1ebb0>::RestClient):
+    1: <% resp = RestClient.get "http://localhost:3000/api/v1/distancias.json"
+    2:     @resposta = JSON.parse(resp.body)  %>
+    3: 
+    4: <%= form_with(model: ship, local: true) do |form| %>
+  
+app/views/ships/_form.html.erb:1
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:13:18 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 41.1ms | Allocations: 860)
+  Rendered ships/new.html.erb within layouts/application (Duration: 56.8ms | Allocations: 1217)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.0ms | Allocations: 2434)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:13:26 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 51.4ms | Allocations: 644)
+  Rendered ships/new.html.erb within layouts/application (Duration: 61.1ms | Allocations: 723)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms | Allocations: 1219)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:14:53 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 74.0ms | Allocations: 645)
+  Rendered ships/new.html.erb within layouts/application (Duration: 79.6ms | Allocations: 724)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms | Allocations: 1219)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:15:06 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 74.3ms | Allocations: 644)
+  Rendered ships/new.html.erb within layouts/application (Duration: 80.8ms | Allocations: 723)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms | Allocations: 1218)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:21:03 -0300
+Started GET "/ships/new" for ::1 at 2019-09-15 02:21:03 -0300
+  [1m[35m (53.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (22.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:21:29 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 42.7ms | Allocations: 882)
+  Rendered ships/new.html.erb within layouts/application (Duration: 51.2ms | Allocations: 1252)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 5.4ms | Allocations: 7602)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:22:29 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 41.2ms | Allocations: 656)
+  Rendered ships/new.html.erb within layouts/application (Duration: 42.6ms | Allocations: 736)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:23:02 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:23:46 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 24.7ms | Allocations: 1648)
+  Rendered ships/new.html.erb within layouts/application (Duration: 43.1ms | Allocations: 2007)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms | Allocations: 3272)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x000000000681d7c8>::RestClient):
+    1: <% 
+    2:     resp = RestClient.get "http://localhost:3000/api/v1/distancias.json"
+    3:     @resposta = JSON.parse(resp.body)  
+    4: %>
+    5: 
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:24:06 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 39.9ms | Allocations: 864)
+  Rendered ships/new.html.erb within layouts/application (Duration: 57.4ms | Allocations: 1221)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms | Allocations: 2435)
+
+
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:26:08 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:26:39 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 2241.7ms | Allocations: 148075)
+  Rendered ships/new.html.erb within layouts/application (Duration: 2289.5ms | Allocations: 148433)
+Completed 500 Internal Server Error in 2347ms (ActiveRecord: 0.0ms | Allocations: 149659)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000000069c49a0>:0x00000000069bd0d8>):
+    1: 
+    2: <%= form_with(model: ship, local: true) do |form| %>
+    3:     <%= f.select :id, @resposta %>
+    4:     <div class="field">
+    5:     <%= form.label :peso %>
+    6:     <%= form.text_field :peso %>
+  
+app/views/ships/_form.html.erb:3
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:27:17 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 663.0ms | Allocations: 5457)
+  Rendered ships/new.html.erb within layouts/application (Duration: 698.1ms | Allocations: 5840)
+Completed 200 OK in 47921ms (Views: 47899.7ms | ActiveRecord: 0.0ms | Allocations: 1426448)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 02:28:18 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+LoadError (cannot load such file -- rest-client):
+  
+app/controllers/ships_controller.rb:2:in `<class:ShipsController>'
+app/controllers/ships_controller.rb:1:in `<top (required)>'
+Started GET "/ships/new" for ::1 at 2019-09-15 02:28:23 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 70.9ms | Allocations: 1716)
+  Rendered ships/new.html.erb within layouts/application (Duration: 348.2ms | Allocations: 1816)
+Completed 200 OK in 1159ms (Views: 1154.5ms | ActiveRecord: 0.0ms | Allocations: 10711)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 02:30:50 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 15.7ms | Allocations: 1750)
+  Rendered ships/new.html.erb within layouts/application (Duration: 29.8ms | Allocations: 2095)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms | Allocations: 3324)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..4)):
+    1: 
+    2: <%= form_with(model: ship, local: true) do |form| %>
+    3:     <%= form.label 'Origem'%>
+    4:     <%= form.select %>
+    5:     <div class="field">
+    6:     <%= form.label :peso %>
+    7:     <%= form.text_field :peso %>
+  
+app/views/ships/_form.html.erb:4
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 02:32:37 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 217.3ms | Allocations: 2872)
+  Rendered ships/new.html.erb within layouts/application (Duration: 239.1ms | Allocations: 3235)
+Completed 200 OK in 445ms (Views: 431.0ms | ActiveRecord: 0.0ms | Allocations: 12887)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 11:23:06 -0300
+  [1m[35m (18.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 2379.4ms | Allocations: 2550)
+  Rendered ships/new.html.erb within layouts/application (Duration: 3089.3ms | Allocations: 2893)
+Completed 500 Internal Server Error in 7291ms (ActiveRecord: 0.0ms | Allocations: 4174)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    1: 
+    2: <%= form_with(model: ship, local: true) do |form| %>
+    3:     <%= form.label 'Origem'%>
+    4:     <%= form.select :origem, @resposta, :prompt => 'Select One' %>
+    5:     <div class="field">
+    6:     <%= form.label :peso %>
+    7:     <%= form.text_field :peso %>
+  
+app/views/ships/_form.html.erb:4
+app/views/ships/_form.html.erb:2
+app/views/ships/new.html.erb:6
+Started GET "/ships/new" for ::1 at 2019-09-15 11:26:34 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 406.9ms | Allocations: 3666)
+  Rendered ships/new.html.erb within layouts/application (Duration: 449.4ms | Allocations: 4029)
+Completed 200 OK in 2154ms (Views: 2100.9ms | ActiveRecord: 0.0ms | Allocations: 13678)
+
+
+Started POST "/ships/new" for ::1 at 2019-09-15 11:27:45 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/ships/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/new" for ::1 at 2019-09-15 11:27:51 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 17.6ms | Allocations: 3387)
+  Rendered ships/new.html.erb within layouts/application (Duration: 28.8ms | Allocations: 3487)
+Completed 200 OK in 331ms (Views: 326.9ms | ActiveRecord: 0.0ms | Allocations: 12226)
+
+
+Started GET "/ships/index" for ::1 at 2019-09-15 17:00:13 -0300
+  [1m[35m (22.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShipsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mShip Load (1.1ms)[0m  [1m[34mSELECT "ships".* FROM "ships" WHERE "ships"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/ships_controller.rb:72:in `set_ship'
+Completed 404 Not Found in 100ms (ActiveRecord: 4.9ms | Allocations: 2977)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ship with 'id'=index):
+  
+app/controllers/ships_controller.rb:72:in `set_ship'
+Started GET "/ships/" for ::1 at 2019-09-15 17:00:37 -0300
+Processing by ShipsController#index as HTML
+  Rendering ships/index.html.erb within layouts/application
+  [1m[36mShip Load (8.2ms)[0m  [1m[34mSELECT "ships".* FROM "ships"[0m
+  ↳ app/views/ships/index.html.erb:16
+  Rendered ships/index.html.erb within layouts/application (Duration: 115.9ms | Allocations: 992)
+Completed 200 OK in 42806ms (Views: 42788.6ms | ActiveRecord: 8.2ms | Allocations: 1421839)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:01:47 -0300
+Processing by ShipsController#new as HTML
+Started GET "/api/v1/distancias.json" for ::1 at 2019-09-15 17:01:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/distancias.json"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 1555ms (ActiveRecord: 0.0ms | Allocations: 66311)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/ships_controller.rb:21:in `new'
+Started GET "/ships/new" for ::1 at 2019-09-15 17:02:50 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 489.8ms | Allocations: 7581)
+  Rendered ships/new.html.erb within layouts/application (Duration: 515.1ms | Allocations: 7948)
+Completed 200 OK in 708ms (Views: 646.4ms | ActiveRecord: 6.8ms | Allocations: 21984)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:13:09 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 14.6ms | Allocations: 1572)
+  Rendered ships/new.html.erb within layouts/application (Duration: 61.4ms | Allocations: 1944)
+Completed 200 OK in 279ms (Views: 265.5ms | ActiveRecord: 0.0ms | Allocations: 11671)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:13:24 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/_form.html.erb (Duration: 7.0ms | Allocations: 1390)
+  Rendered ships/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1491)
+Completed 200 OK in 178ms (Views: 173.4ms | ActiveRecord: 0.0ms | Allocations: 10271)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:17:58 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 206)
+Completed 200 OK in 164ms (Views: 151.7ms | ActiveRecord: 0.0ms | Allocations: 10019)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:18:31 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 207)
+Completed 200 OK in 329ms (Views: 317.1ms | ActiveRecord: 0.0ms | Allocations: 10018)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:20:00 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 217)
+Completed 200 OK in 166ms (Views: 157.7ms | ActiveRecord: 0.0ms | Allocations: 10025)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:31:58 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 208)
+Completed 200 OK in 183ms (Views: 171.4ms | ActiveRecord: 0.0ms | Allocations: 10015)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:37:12 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 53)
+Completed 200 OK in 241ms (Views: 232.5ms | ActiveRecord: 0.0ms | Allocations: 8915)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:45:27 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 222)
+Completed 200 OK in 225ms (Views: 208.4ms | ActiveRecord: 0.0ms | Allocations: 10021)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:47:44 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 224)
+Completed 200 OK in 270ms (Views: 251.3ms | ActiveRecord: 0.0ms | Allocations: 10024)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:48:21 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 53)
+Completed 200 OK in 274ms (Views: 271.7ms | ActiveRecord: 0.0ms | Allocations: 8913)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:53:25 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 228)
+Completed 200 OK in 320ms (Views: 293.6ms | ActiveRecord: 0.0ms | Allocations: 10030)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:53:38 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 28.3ms | Allocations: 230)
+Completed 200 OK in 220ms (Views: 208.6ms | ActiveRecord: 0.0ms | Allocations: 10043)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:53:48 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 53)
+Completed 200 OK in 175ms (Views: 172.2ms | ActiveRecord: 0.0ms | Allocations: 8922)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 17:54:08 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 228)
+Completed 200 OK in 240ms (Views: 228.2ms | ActiveRecord: 0.0ms | Allocations: 10038)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:04:17 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 52.3ms | Allocations: 241)
+Completed 200 OK in 255ms (Views: 242.2ms | ActiveRecord: 0.0ms | Allocations: 10054)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:10:50 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 53)
+Completed 200 OK in 164ms (Views: 159.0ms | ActiveRecord: 0.0ms | Allocations: 8924)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:12:10 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 46.9ms | Allocations: 241)
+Completed 200 OK in 234ms (Views: 223.7ms | ActiveRecord: 0.0ms | Allocations: 10048)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:12:44 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 53)
+Completed 200 OK in 146ms (Views: 140.0ms | ActiveRecord: 0.0ms | Allocations: 8922)
+
+
+Started POST "/api/v1/distancias.json?origem=W&destino=Y&distancia=20" for ::1 at 2019-09-15 18:13:05 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/distancias.json"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/distancias.json?origem=W&destino=Y&distancia=20" for ::1 at 2019-09-15 18:13:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/distancias.json"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ships/new" for ::1 at 2019-09-15 18:16:24 -0300
+  [1m[35m (24.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (50.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 42.3ms | Allocations: 531)
+Completed 200 OK in 48893ms (Views: 48691.6ms | ActiveRecord: 5.2ms | Allocations: 1427610)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:17:52 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 249)
+Completed 200 OK in 200ms (Views: 190.1ms | ActiveRecord: 0.0ms | Allocations: 10064)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:18:07 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 54)
+Completed 200 OK in 124ms (Views: 122.0ms | ActiveRecord: 0.0ms | Allocations: 8924)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:20:05 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 240)
+Completed 200 OK in 207ms (Views: 193.5ms | ActiveRecord: 0.0ms | Allocations: 10041)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:20:57 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 240)
+Completed 200 OK in 165ms (Views: 148.5ms | ActiveRecord: 0.0ms | Allocations: 10046)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:22:29 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 242)
+Completed 200 OK in 181ms (Views: 163.4ms | ActiveRecord: 0.0ms | Allocations: 10051)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:25:55 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 43.3ms | Allocations: 238)
+Completed 200 OK in 563ms (Views: 547.1ms | ActiveRecord: 0.0ms | Allocations: 10043)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:26:08 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 236)
+Completed 200 OK in 253ms (Views: 228.6ms | ActiveRecord: 0.0ms | Allocations: 10040)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:29:49 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 236)
+Completed 200 OK in 186ms (Views: 176.1ms | ActiveRecord: 0.0ms | Allocations: 10043)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:34:56 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 251)
+Completed 200 OK in 290ms (Views: 265.4ms | ActiveRecord: 0.0ms | Allocations: 10050)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:36:39 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 242)
+Completed 200 OK in 178ms (Views: 161.0ms | ActiveRecord: 0.0ms | Allocations: 10036)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:40:01 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 241)
+Completed 200 OK in 222ms (Views: 205.1ms | ActiveRecord: 0.0ms | Allocations: 10044)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:41:02 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 245)
+Completed 200 OK in 177ms (Views: 162.8ms | ActiveRecord: 0.0ms | Allocations: 10047)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:41:25 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 245)
+Completed 200 OK in 181ms (Views: 164.1ms | ActiveRecord: 0.0ms | Allocations: 10049)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:41:48 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 242)
+Completed 200 OK in 185ms (Views: 167.5ms | ActiveRecord: 0.0ms | Allocations: 10047)
+
+
+Started GET "/ships/" for ::1 at 2019-09-15 18:44:36 -0300
+Processing by ShipsController#index as HTML
+  Rendering ships/index.html.erb within layouts/application
+  [1m[36mShip Load (19.7ms)[0m  [1m[34mSELECT "ships".* FROM "ships"[0m
+  ↳ app/views/ships/index.html.erb:16
+  Rendered ships/index.html.erb within layouts/application (Duration: 122.3ms | Allocations: 962)
+Completed 200 OK in 344ms (Views: 306.5ms | ActiveRecord: 19.7ms | Allocations: 9988)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:44:59 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 49)
+Completed 200 OK in 379ms (Views: 358.4ms | ActiveRecord: 0.0ms | Allocations: 8913)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:45:10 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 48)
+Completed 200 OK in 184ms (Views: 181.8ms | ActiveRecord: 0.0ms | Allocations: 8915)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:45:31 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 48)
+Completed 200 OK in 139ms (Views: 135.2ms | ActiveRecord: 0.0ms | Allocations: 8919)
+
+
+Started GET "/ships/new" for ::1 at 2019-09-15 18:47:52 -0300
+Processing by ShipsController#new as HTML
+  Rendering ships/new.html.erb within layouts/application
+  Rendered ships/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 243)
+Completed 200 OK in 206ms (Views: 196.4ms | ActiveRecord: 0.0ms | Allocations: 10052)
+
+
+Started GET "/ships/" for ::1 at 2019-09-15 20:00:14 -0300
+  [1m[35m (30.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShipsController#index as HTML
+  Rendering ships/index.html.erb within layouts/application
+  [1m[36mShip Load (1.6ms)[0m  [1m[34mSELECT "ships".* FROM "ships"[0m
+  ↳ app/views/ships/index.html.erb:16
+  Rendered ships/index.html.erb within layouts/application (Duration: 248.5ms | Allocations: 1635)
+Completed 200 OK in 74323ms (Views: 74053.7ms | ActiveRecord: 6.2ms | Allocations: 1424391)
+
+
